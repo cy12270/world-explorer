@@ -36,3 +36,36 @@ h2 {
   width: 50%;
 }
 
+/* Base hero styling */
+.hero {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #5abdac, #a0af54);
+  /* background: url('../img/hero-bg.jpg') center/cover no-repeat; */
+  padding: 2rem;
+}
+
+/* Typography */
+.hero h1 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
