@@ -1,0 +1,38 @@
+.card {
+  padding: 10px;
+}
+
+.card-body {
+  font-family: 'Overpass';
+}
+
+body {
+}
+
+.card {
+  border: none;
+}
+
+.btn {
+}
+
+h2 {
+}
+
+.input-group {
+  font-family: 'Overpass';
+}
+
+.carousel-item {
+}
+
+.carousel-item img {
+  height: 30%;
+  width: 50%;
+}
+
+#carousel-2 {
+  height: 50%;
+  width: 50%;
+}
+
