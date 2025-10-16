@@ -6,24 +6,12 @@
   font-family: 'Overpass';
 }
 
-body {
-}
-
 .card {
   border: none;
 }
 
-.btn {
-}
-
-h2 {
-}
-
 .input-group {
   font-family: 'Overpass';
-}
-
-.carousel-item {
 }
 
 .carousel-item img {
@@ -67,5 +55,138 @@ h2 {
   }
   .hero p {
     font-size: 1rem;
+  }
+}
+
+/* Hero section styles - replacing Bootstrap */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    padding: 3rem 1rem;
+  }
+}
+
+.hero-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FED3AF;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-text-section {
+  flex: 1;
+  min-width: 300px;
+  color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.hero-text-content {
+  max-width: 350px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.hero-title {
+  font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.hero-button {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-image-section {
+  flex: 1;
+  min-width: 300px;
+  min-height: 250px;
+  background-color: #FED3AF;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: -1;
+  /* overflow: hidden; */
+  /* padding: 10px; */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-fit: cover; */
+  object-position: center;
+  display: block;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Responsive behavior */
+@media (min-width: 768px) {
+  .hero-image-section {
+    order: 0;
+  }
+  
+  .hero-text-section {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .hero-image-section {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-text-section {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .hero-image-section {
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-image {
+    height: 100%;
+    border-radius: 6px;
   }
 }
