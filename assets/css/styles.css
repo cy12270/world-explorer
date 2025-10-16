@@ -38,9 +38,9 @@
 }
 
 /* Typography */
-.hero h1 {
+.hero h2 {
   font-family: 'Overpass', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero p {
@@ -102,7 +102,7 @@
 .hero-title {
   font-family: 'Overpass', sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin: 0 0 1rem 0;
   line-height: 1.2;
 }
